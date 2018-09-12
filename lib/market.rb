@@ -41,4 +41,17 @@ class Market
     end
     total_inventory
   end
+
+  def sell(item, quantity)
+    if total_inventory[item] >= quantity
+      move_stock(item, quantity)
+      true
+    else
+      false
+    end
+  end
+
+  def move_stock(whats_sold, demand_for)
+    #demand vs difference
+  end
 end
