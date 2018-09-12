@@ -10,6 +10,7 @@ class MarketTest < Minitest::Test
     @vendor_2 = Vendor.new("Ba-Nom-a-Nom")
     @vendor_3 = Vendor.new("Palisade Peach Shack")
   end
+  
   def test_it_exists
     assert_instance_of Market, @market
   end
